@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 100vh;
+  background-color: #8f4949;
+  font-family: "Lobster", "Courier New", Courier, monospace;
+  text-align: center;
+  color: #fff;
+}
+
+.snowflake-container {
+  display: flex;
+  justify-content: space-around;
+  animation: snowflake-fall 10s;
+  animation-iteration-count: infinite;
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 36px;
+  animation: snowflake 5s infinite;
+}
+
+@keyframes snowflake-fall {
+  from {
+    transform: translateY(-50vh);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes snowflake {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.greeting {
+  background: #491c16;
+  margin: 20px auto;
+  max-width: fit-content;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem;
+}
+
+header {
+  font-size: 3rem;
+  text-shadow: 5px 10px 10px rgba(138, 33, 33, 0.7);
+}
+
+footer {
+  font-size: 1.2rem;
+}
