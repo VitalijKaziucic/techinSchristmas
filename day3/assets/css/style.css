@@ -1,0 +1,51 @@
+body {
+  background: black;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 60vh;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+section > p {
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 1.5rem;
+}
+
+.heart {
+  color: red;
+}
+
+#giftBtn::before,
+#giftBtn::after {
+  content: " 🎁 ";
+}
+
+#giftBtn {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: linear-gradient(to right, red, green);
+  border-radius: 10px;
+  border: none;
+  transition: all 1s;
+  color: white;
+}
+
+#giftBtn:hover {
+  box-shadow: 0 0 2px 7px green;
+}
